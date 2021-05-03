@@ -1,2 +1,8 @@
 # Monter-local
  Codigo fonte do Monter-PNT
+  Monter PNT é um script desenvolvido em conjunto com o Labgis - Laboratório de Geotecnologia da UERJ. Ele utiliza os dados da difereça de NDVI em uma série temporal de imagens  
+do Satélite Landsat-8. Assim são extraidas informações de forma sazonal que permitem calcular a possível ocorrência de ganhos ou perdas na vegetação. No fim é gerada uma imagem raster georreferenciada. Esta imagem pode ser aberta em softwares SIG, como o Qgis e o Arcgis, de forma a poder realizar a análise com a imagem original e se ter acesso as coordenadas dos pontos que indicam mudança.
+ Ese código foi desenvolvido para analise do território do Parque Nacional da Tijuca, sendo resultado de um projeto em parceria com ICMBIO, entretanto sua metodologia foi pensada para ser aplicável a outras regiões de vegetação que se busque localizar as mudanças, sendo necessário apenas regulas os parâmetros que indiquem as mudanças. 
+  Para seu funcionamento é necessário um conjunto de imagens, da região a ser estudada, e o vetor da área requisitada. A parte descrita como fluxograma_2, realiza o processamento das imagens zip, e têm como resultado final uma pasta com as sequencias de NDVI. O plotando Array calcula os parâmetros de mudança, seu uso ainda está para ser usado no jupyter, devido a alguns ajustes ainda sendo feitos. 
+  Ainda assim, sua metodologia ja se mostrou eficaz, como bem relatado no relatório desenvolvido para o fim do tempo do projeto. E caso seja de interesse utiliza-lo, pode- se realizar o download, e entrar em contato por aqui o via meu e-mail: luan.schimidel@labgis.uerj.br, para duvidas de como regular seus parâmetros
+ 
